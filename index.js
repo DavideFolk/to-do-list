@@ -13,7 +13,7 @@ $('#aggiungi').click((e) => {
 	if (form[0].checkValidity()) {
 		e.preventDefault();
 		let valoreItem = $('#nota').val();
-		let numeroItem = $('.elenco').length;
+		let numeroItem = Math.floor(Math.random() * 10000);
 		$('.elenco').last()
 			.after(`<label class="list-group-item d-flex gap-2 elenco numero-${numeroItem}">
 		<input class="form-check-input flex-shrink-0" type="checkbox" value="">

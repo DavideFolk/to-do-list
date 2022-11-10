@@ -1,3 +1,4 @@
+'use strict';
 let today = new Date();
 let options = {
 	weekday: 'long',
